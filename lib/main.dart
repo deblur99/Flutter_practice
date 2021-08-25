@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'imageWidget.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  return runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   @override
@@ -10,7 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: MaterialFlutterApp(),
+      home: ImageWidgetApp(),
     );
   }
 }
@@ -23,45 +26,30 @@ class MaterialFlutterApp extends StatefulWidget {
 }
 
 class _MaterialFlutterApp extends State<MaterialFlutterApp> {
-  int number = 0;
-  int _number = 0;
+  int number = 0, _number = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Material Design App\nCount : $number"),
+        title: Text("Material Flutter App\n$_number"),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.add),
+        onPressed: () {
+          number++;
+          setState(() => _number = number);
+        },
       ),
       body: Container(
-        child: Row(
-          children: [
-            FloatingActionButton(
-                child: Icon(
-                  Icons.adjust_rounded,
-                ),
-                onPressed: () {
-                  setState(() {
-                    _number = number = 0;
-                  });
-                }),
-            FloatingActionButton(
-              child: Icon(
-                Icons.add,
-              ),
-              onPressed: () {
-                _number++;
-                print(_number);
-                setState(() {
-                  number = _number;
-                });
-              },
-            ),
+        child: Column(
+          children: <Widget> [
+            Icon(Icons.call),
+            Text("Phone Book"),
           ],
           mainAxisAlignment: MainAxisAlignment.spaceAround,
-        ),
-        alignment: Alignment.bottomRight,
-        margin: EdgeInsets.all(25.0),
-      ),
+        )
+      )
     );
   }
 }
