@@ -47,7 +47,7 @@ class _MaterialFlutterApp extends State<MaterialFlutterApp> {
             Icon(Icons.call),
             Text("Phone Book"),
           ],
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
         )
       )
     );
