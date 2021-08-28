@@ -49,42 +49,42 @@ class _MyHomePageState extends State<MyHomePageState>
     animalList.add(Animal(
       animalName: 'Bee',
       kind: "insects",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/bee.png",
+      imagePath: "repo/images/bee.png",
     ));
     animalList.add(Animal(
       animalName: 'Cat',
       kind: "mammals",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/cat.png",
+      imagePath: "repo/images/cat.png",
     ));
     animalList.add(Animal(
       animalName: 'Cow',
       kind: "mammals",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/cow.png",
+      imagePath: "repo/images/cow.png",
     ));
     animalList.add(Animal(
       animalName: 'Dog',
       kind: "mammals",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/dog.png",
+      imagePath: "repo/images/dog.png",
     ));
     animalList.add(Animal(
       animalName: 'Fox',
       kind: "mammals",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/fox.png",
+      imagePath: "repo/images/fox.png",
     ));
     animalList.add(Animal(
       animalName: 'Monkey',
       kind: "apes",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/monkey.png",
+      imagePath: "repo/images/monkey.png",
     ));
     animalList.add(Animal(
       animalName: 'pig',
       kind: "mammals",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/pig.png",
+      imagePath: "repo/images/pig.png",
     ));
     animalList.add(Animal(
       animalName: 'Wolf',
       kind: "mammals",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/wolf.png",
+      imagePath: "repo/images/wolf.png",
     ));
   }
 
