@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class Animal {
-  dynamic imagePath;
-  dynamic animalName;
-  dynamic kind;
-  dynamic flyExists = false;
+  String imagePath;
+  String animalName;
+  String kind;
+  bool flyExists = false;
 
   Animal(
       {@required this.animalName,

@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePageState>
   ];
 
   // 'with' keyword means that you can use classes in recycling what you want
-  late TabController _controller;
+  TabController _controller;
   List<Animal> animalList = [];
 
   @override
@@ -49,42 +49,42 @@ class _MyHomePageState extends State<MyHomePageState>
     animalList.add(Animal(
       animalName: 'Bee',
       kind: "insects",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/bee.png",
+      imagePath: "repo/images/bee.png",
     ));
     animalList.add(Animal(
       animalName: 'Cat',
       kind: "mammals",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/cat.png",
+      imagePath: "repo/images/cat.png",
     ));
     animalList.add(Animal(
       animalName: 'Cow',
-      kind: "mammals",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/cow.png",
+      kind: "Mammal",
+      imagePath: "repo/images/cow.png",
     ));
     animalList.add(Animal(
       animalName: 'Dog',
-      kind: "mammals",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/dog.png",
+      kind: "Mammal",
+      imagePath: "repo/images/dog.png",
     ));
     animalList.add(Animal(
       animalName: 'Fox',
-      kind: "mammals",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/fox.png",
+      kind: "Mammal",
+      imagePath: "repo/images/fox.png",
     ));
     animalList.add(Animal(
       animalName: 'Monkey',
-      kind: "apes",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/monkey.png",
+      kind: "Mammal",
+      imagePath: "repo/images/monkey.png",
     ));
     animalList.add(Animal(
       animalName: 'pig',
-      kind: "mammals",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/pig.png",
+      kind: "Mammal",
+      imagePath: "repo/images/pig.png",
     ));
     animalList.add(Animal(
       animalName: 'Wolf',
-      kind: "mammals",
-      imagePath: "C:/Users/deblu/AndroidStudioProjects/listview_example/repo/images/wolf.png",
+      kind: "Mammal",
+      imagePath: "repo/images/wolf.png",
     ));
   }
 
@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePageState>
       body: TabBarView(
         children: <Widget>[
           FirstApp(list: animalList),
-          SecondApp(list: animalList),
+          SecondApp(),//list: animalList),
         ],
         controller: _controller,
       ),
