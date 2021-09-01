@@ -36,7 +36,7 @@ class _MyHomePageState extends State<MyHomePageState>
   ];
 
   // 'with' keyword means that you can use classes in recycling what you want
-  late TabController _controller;
+  TabController _controller;
   List<Animal> animalList = [];
 
   @override
@@ -58,32 +58,32 @@ class _MyHomePageState extends State<MyHomePageState>
     ));
     animalList.add(Animal(
       animalName: 'Cow',
-      kind: "mammals",
+      kind: "Mammal",
       imagePath: "repo/images/cow.png",
     ));
     animalList.add(Animal(
       animalName: 'Dog',
-      kind: "mammals",
+      kind: "Mammal",
       imagePath: "repo/images/dog.png",
     ));
     animalList.add(Animal(
       animalName: 'Fox',
-      kind: "mammals",
+      kind: "Mammal",
       imagePath: "repo/images/fox.png",
     ));
     animalList.add(Animal(
       animalName: 'Monkey',
-      kind: "apes",
+      kind: "Mammal",
       imagePath: "repo/images/monkey.png",
     ));
     animalList.add(Animal(
       animalName: 'pig',
-      kind: "mammals",
+      kind: "Mammal",
       imagePath: "repo/images/pig.png",
     ));
     animalList.add(Animal(
       animalName: 'Wolf',
-      kind: "mammals",
+      kind: "Mammal",
       imagePath: "repo/images/wolf.png",
     ));
   }
@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePageState>
       body: TabBarView(
         children: <Widget>[
           FirstApp(list: animalList),
-          SecondApp(list: animalList),
+          SecondApp(),//list: animalList),
         ],
         controller: _controller,
       ),

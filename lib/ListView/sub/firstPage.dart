@@ -4,7 +4,7 @@ import 'package:listview_example/animalItem.dart';
 class FirstApp extends StatelessWidget {
   final List<Animal> list;
 
-  FirstApp({Key? key, required this.list}) : super(key: key);
+  FirstApp({Key key, this.list}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class FirstApp extends StatelessWidget {
           onTap: () {
             AlertDialog dialog = AlertDialog(
               content: Text(
-                'This animal is ${list[position].kind}.',
+                '${list[position].animalName} is ${list[position].kind}.',
                 style: TextStyle(fontSize: 30.0),
               ),
             );
